@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Moment :: Welcome</title>
+  </head>
+  <body>
+    <time id="time">12:17:04 PM</time>
+    <div class="container">
+      <h1>
+        Good <span id="greeting">Afternoon</span>
+        <span id="firstName" name="firstName" contenteditable="true">Omar</span>
+      </h1>
+
+      <h2>What Is Your Focus For Today?</h2>
+      <h2 id="focus" name="focus" contenteditable="true">Make Cool Web Apps</h2>
+    </div>
+    <div class="container weather">
+      <p>
+        <i class="fas fa-sun" id="icon"></i><br />
+        <strong><span id="weather-status"></span></strong><br />
+        Current: <span id="temp"></span>&nbsp;<sup>o</sup>C
+        <br />
+        Max: <span id="max-temp"></span>&nbsp;<sup>o</sup>C
+        <strong>: :</strong> Min: <span id="min-temp"></span>&nbsp;<sup>o</sup>C
+        <br />
+        Feels like: <span id="feels-temp"></span>&nbsp;<sup>o</sup>C
+        <br />
+        <br />
+        <span id="loc"></span>, <span id="country"></span>
+      </p>
+    </div>
+    <blockquote>
+      <p>
+        "
+        <span id="quote"></span>"<br /><br />- <span id="author"> </span>
+      </p>
+    </blockquote>
+    <video src="" id="video" autoplay loop muted></video>
+    <nav>
+      <ul>
+        <li>
+          <a href="https://twitter.com/shanawany_omar" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://github.com/omarkshan" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/sikiri99/" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/omar-elshanawany/"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </li>
+        <br />
+        <br />
+        <li>
+          <a href="pandemic.html" id="p-link"
+            ><i class="fas fa-virus" id="pandemic"></i><br />COVID</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <script src="js/clock_n_weather.js"></script>
+  </body>
+</html>
