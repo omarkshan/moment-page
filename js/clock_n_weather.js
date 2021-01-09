@@ -34,23 +34,25 @@ function addZero(n) {
 function setBackground() {
   let today = new Date(),
     hour = today.getHours();
-  var video = document.getElementById("video");
 
   if (hour < 12) {
     // Morning
     document.getElementById("greeting").innerHTML = "Morning";
-    video.src = "videos/morning.mp4";
-    video.load();
+    document.body.style.backgroundImage = "url('./images/dawn.jpg')";
+    document.body.style.backgroundSize = "cover";
+    document.body.style.backgroundRepeat = "no-repeat";
   } else if (hour < 18) {
     // Afternoon
     document.getElementById("greeting").innerHTML = "Afternoon";
-    video.src = "videos/afternoon.mp4";
-    video.load();
+    document.body.style.backgroundImage = "url('./images/morning.jpg')";
+    document.body.style.backgroundSize = "cover";
+    document.body.style.backgroundRepeat = "no-repeat";
   } else {
     //Evening
     document.getElementById("greeting").innerHTML = "Evening";
-    video.src = "videos/evening.mp4";
-    video.load();
+    document.body.style.backgroundImage = "url('./images/night.jpg')";
+    document.body.style.backgroundSize = "cover";
+    document.body.style.backgroundRepeat = "no-repeat";
   }
 }
 

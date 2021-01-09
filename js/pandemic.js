@@ -52,5 +52,9 @@ async function updateResult(url) {
     });
   // setTimeout(updateResult(url), 5000);
 }
-// 
+//
 getResult(apiLink);
+
+document.body.style.backgroundImage = "url('./images/covid.jpg')";
+document.body.style.backgroundSize = "cover";
+document.body.style.backgroundRepeat = "no-repeat";
